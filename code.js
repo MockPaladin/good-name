@@ -1,6 +1,4 @@
-console.log("Hello, World!");
+function greet() {
 
-let x = 10;
-let y = 20.0;
-
-console.log(x + y);
+  alert("Hello, World!");
+}
