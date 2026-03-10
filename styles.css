@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
@@ -9,6 +10,8 @@ header {
   padding: 10px;
   text-align: left;
 =======
+=======
+>>>>>>> Stashed changes
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
@@ -47,6 +50,9 @@ button {
 
 button:hover {
   background-color: #32373c;
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 : left;
+=======
+>>>>>>> Stashed changes
 }
