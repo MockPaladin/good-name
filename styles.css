@@ -1,3 +1,10 @@
-@import url("https://fonts.googleapis.com");
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-site-title {font-family: 'Bungee', cursive;} /* borrowed from https://springkonstant.org */
+
+h1 {font-family: 'Bungee', cursive;} /* borrowed from https://springkonstant.org */
+header {
+  background-color: hsl(185, 79%, 41%);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
