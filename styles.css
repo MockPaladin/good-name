@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
@@ -7,4 +8,45 @@ header {
   color: white;
   padding: 10px;
   text-align: left;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+h1 {
+  font-family: 'Bungee', cursive;
+}
+
+header {
+  background-color: hsl(185, 79%, 41%);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+p, a {
+  background-color: inherit;
+  font-family: 'Quicksand', sans-serif;
+  color: helloWorld();
+}
+
+button {
+  align-items: center;
+  background-color: hsl(185, 79%, 41%);
+  border: none;
+  padding: 7.5px 7.5px;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 4px 2px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125em;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #32373c;
+>>>>>>> Stashed changes
+: left;
 }
