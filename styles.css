@@ -54,3 +54,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+a:visited {
+  font-style: italic; /* from https://springkonstant.org */
+}
