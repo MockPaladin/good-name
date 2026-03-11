@@ -64,3 +64,7 @@ h2 {
 a:visited {
   font-style: italic; /* from https://springkonstant.org */
 }
+
+abbr {
+  text-decoration: underline;
+}
