@@ -55,13 +55,12 @@ a:hover {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
 h2 {
   background-color: white; /* background color */
   font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
   color: black;
-=======
+}
+
 a:visited {
   font-style: italic; /* from https://springkonstant.org */
->>>>>>> dfcb3404844539bdbbabdb69cfdbf148d105f906
 }
