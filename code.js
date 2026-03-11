@@ -1,4 +1,5 @@
-function helloWorld() {
+function toSite(siteLocation) {
 
-  alert("Hello, World!");
+  window.location.href = siteLocation;
+
 }

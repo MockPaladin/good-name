@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap"); /* Import Bungee */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); /* Import Quicksand */
+
+/* Title */
+h1 {
+  font-family: 'Bungee', cursive;
+}
+
+/* Header */
+header {
+  background-color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  color: white; /* text color */
+  padding: 10px; /* some padding to make it nice */
+  text-align: left;
+}
+
+p{
+  background-color: white; /* background color */
+  font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
+  color: black;
+}
+
+button {
+  display: block;
+  align-items: center;
+  background-color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  border: none;
+  padding: 7.5px 7.5px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 4px 2px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125em;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; 
+}
+
+button:hover {
+  background-color: #32373c;
+}
+
+a {
+  font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
+  font-weight: 600;
+  color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  text-decoration: none; /* remove underline */
+}
+
+a:hover {
+  text-decoration: underline;
+}
