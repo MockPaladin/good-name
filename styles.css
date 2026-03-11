@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap"); /* Import Bungee */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); /* Import Quicksand */
 
+body {
+
+  margin: 0; /* remove default margin */
+}
+
 /* Title */
 h1 {
   font-family: 'Bungee', cursive;
@@ -10,8 +15,11 @@ h1 {
 header {
   background-color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
   color: white; /* text color */
-  padding: 10px; /* some padding to make it nice */
+  padding: 10px; /* padding around the content */
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 25px; /* space between the logo and the title */
 }
 
 p {
