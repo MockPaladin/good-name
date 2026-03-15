@@ -1,19 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap"); /* Import Bungee */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); /* Import Quicksand */
 
-body {
+:root {
 
-  margin: 0; /* remove default margin */
+  --spring-konstant-blue: hsl(185, 79%, 41%);
+  --button-hover-gray: #32373c;
 }
 
-/* Title */
-h1 {
-  font-family: 'Bungee', cursive;
+body {margin: 0; /* remove default margin */}
+
+.margin-on {
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
+.margin-off {
+  margin-right: 0;
+}
+
+h1 {font-family: 'Bungee', cursive;} /* title */
 
 /* Header */
 header {
-  background-color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  background-color: var(--spring-konstant-blue); /* from https://springkonstant.org */
   color: white; /* text color */
   padding: 10px; /* padding around the content */
   text-align: left;
@@ -28,10 +37,10 @@ p {
   color: black;
 }
 
-button {
+button { /* TODO: add preview link in bottom left corner using <a> */
   display: block;
   align-items: center;
-  background-color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  background-color: var(--spring-konstant-blue); /* from https://springkonstant.org */
   border: none;
   padding: 7.5px 7.5px;
   font-size: 16px;
@@ -48,31 +57,37 @@ button {
   width: 100px; 
 }
 
-button:hover {
-  background-color: #32373c;
+button:hover { /* on button hover, change to this */
+  background-color: var(--button-hover-gray);
 }
 
-a {
+a { /* links to other sites */
   font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
   font-weight: 600;
-  color: hsl(185, 79%, 41%); /* from https://springkonstant.org */
+  color: var(--spring-konstant-blue);
   text-decoration: none; /* remove underline */
 }
 
-a:hover {
+a:hover { /* on link hover */
   text-decoration: underline;
 }
 
-h2 {
+h2 { /* section */
   background-color: white; /* background color */
   font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
   color: black;
 }
 
-a:visited {
-  font-style: italic; /* from https://springkonstant.org */
+a:visited { /* if the link has already been visited */
+  font-style: italic;
 }
 
-abbr {
+abbr { /* abbreviations, pretty rarely used */
   text-decoration: underline;
 }
+
+/*
+TODO: make the text margin aligned (not covering the whole width of screen)
+At a certain width, this will hopefully be able to convert to simply the full
+screen width (like on https://en.wikipedia.org)
+*/
