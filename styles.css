@@ -16,6 +16,7 @@ body {margin: 0; /* remove default margin */}
 
 .margin-off {
   margin-right: 0;
+  margin-left: 0;
 }
 
 h1 {font-family: 'Bungee', cursive;} /* title */
