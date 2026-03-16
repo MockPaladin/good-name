@@ -9,16 +9,6 @@
 
 body {margin: 0; /* remove default margin */}
 
-.margin-on {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.margin-off {
-  margin-right: 2%;
-  margin-left: 2%;
-}
-
 h1 {font-family: 'Bungee', cursive;} /* title */
 
 /* Header */
