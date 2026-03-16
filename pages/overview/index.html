@@ -9,6 +9,7 @@
   </head>
   <body>
     <!-- top banner -->
+     <div id="loader" class="loading"></div>
     <header>
       <h1>Overview of FRC Programming</h1>
     </header>
@@ -49,7 +50,7 @@
 
     </footer>
     <script>
-      let intervalId = setInterval(() => setMargin("main"), 500); // run setMargin() every 500 ms
+      let intervalId = setInterval(() => setMargin("main", "loader"), 500); // run setMargin() every 500 ms
     </script>
   </body>
 </html>

@@ -4,7 +4,7 @@ function toSite(siteLocation) {
 
 }
 
-function setMargin(writeLocation) {
+function setMargin(writeLocation, asdf) {
 
 
   writeLocation = document.getElementById(writeLocation);
@@ -22,8 +22,7 @@ function setMargin(writeLocation) {
     writeLocation.classList.remove('margin-off');
     writeLocation.classList.add('margin-on');
   }
+  asdf = document.getElementById(asdf)
+  asdf.classList.remove('loading')
+  asdf.classList.add('loaded')
 }
-
-window.addListenerEvent('load', function() {
-  writeLocation.classList.remove('loading')
-});
