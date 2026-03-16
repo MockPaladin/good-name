@@ -86,9 +86,3 @@ a:visited { /* if the link has already been visited */
 abbr { /* abbreviations, pretty rarely used */
   text-decoration: underline;
 }
-
-/*
-TODO: make the text margin aligned (not covering the whole width of screen)
-At a certain width, this will hopefully be able to convert to simply the full
-screen width (like on https://en.wikipedia.org)
-*/

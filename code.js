@@ -20,3 +20,7 @@ function setMargin(writeLocation) {
     writeLocation.classList.add('margin-on');
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  setMargin("main");
+  });
