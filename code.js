@@ -4,7 +4,7 @@ function toSite(siteLocation) {
 
 }
 
-function setMargin(writeLocation, asdf) {
+function setMargin(writeLocation) {
 
 
   writeLocation = document.getElementById(writeLocation);
