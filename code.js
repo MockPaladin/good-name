@@ -6,7 +6,6 @@ function toSite(siteLocation) {
 
 function setMargin(writeLocation) {
 
-
   writeLocation = document.querySelectorAll(writeLocation);
 
   for (let i = 0; i < writeLocation.length; i++) {
@@ -17,13 +16,12 @@ function setMargin(writeLocation) {
       writeLocation[i].style.marginRight = "0%";
     } else {
 
-      
       writeLocation[i].style.marginLeft = "20%";
       writeLocation[i].style.marginRight = "20%";
     }
   }
 
-  
+
 }
 
 document.addEventListener('DOMContentLoaded', function() {
