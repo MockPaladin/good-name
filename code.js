@@ -12,13 +12,10 @@ function setMargin(writeLocation) {
   writeLocation.classList.remove('margin-off');
 
   if (window.innerWidth <= window.innerHeight) {
-
-    console.log('width <= height');
     writeLocation.classList.remove('margin-on');
     writeLocation.classList.add('margin-off');
     
   } else {
-    console.log('width > height');
     writeLocation.classList.remove('margin-off');
     writeLocation.classList.add('margin-on');
   }
