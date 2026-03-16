@@ -23,3 +23,7 @@ function setMargin(writeLocation) {
     writeLocation.classList.add('margin-on');
   }
 }
+
+window.addListenerEvent('load', function() {
+  writeLocation.classList.remove('loading')
+});
