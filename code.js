@@ -11,11 +11,9 @@ function setMargin(writeLocation) {
   for (let i = 0; i < writeLocation.length; i++) {
 
     if (window.innerWidth <= 850) {
-
       writeLocation[i].style.marginLeft = "0%";
       writeLocation[i].style.marginRight = "0%";
     } else {
-
       writeLocation[i].style.marginLeft = "20%";
       writeLocation[i].style.marginRight = "20%";
     }
