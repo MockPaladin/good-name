@@ -5,11 +5,15 @@
 :root { /* vars */
 
   --spring-konstant-blue: hsl(185, 79%, 41%);
-  --button-hover-gray: #32373c;
+  --button-hover-gray: hsl(210, 9.09%, 21.57%);
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -98,7 +102,6 @@ abbr { /* abbreviations, pretty rarely used */
 }
 
 .sidebar {
-  background-color: white;
   overflow-y: scroll;
   width: 15vw;
   height: 100vh;
@@ -119,4 +122,10 @@ abbr { /* abbreviations, pretty rarely used */
 
 .sidebar-text {
   color: black;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column; /* vertical list */
+  gap: 10px;
 }
