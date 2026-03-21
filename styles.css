@@ -106,7 +106,7 @@ abbr { /* abbreviations, pretty rarely used */
   width: 15vw;
   height: 100vh;
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 15px;
   position: sticky;
   top: 0;
   box-sizing: border-box;
@@ -129,3 +129,4 @@ abbr { /* abbreviations, pretty rarely used */
   flex-direction: column; /* vertical list */
   gap: 10px;
 }
+
