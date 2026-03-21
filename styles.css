@@ -130,3 +130,7 @@ abbr { /* abbreviations, pretty rarely used */
   gap: 10px;
 }
 
+.to-top {
+  color: var(--spring-konstant-blue);
+  font-weight: 600;
+}
