@@ -1,15 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap"); /* Import Bungee */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"); /* Import Quicksand */
 
-:root {
+
+:root { /* vars */
 
   --spring-konstant-blue: hsl(185, 79%, 41%);
   --button-hover-gray: #32373c;
 }
 
-body {margin: 0; /* remove default margin */}
+* {
+  box-sizing: border-box;
+}
 
-h1 {font-family: 'Bungee', cursive;} /* title */
+body {
+  margin: 0; /* remove default margin */
+  background-color: hsl(217, 83%, 12%);
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  font-size: 1.75em;
+  color: white;
+} /* title */
+
+h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
+  color: white;
+} /* subtitle */
 
 /* Header */
 header {
@@ -23,15 +41,16 @@ header {
 }
 
 p {
-  background-color: white; /* background color */
+  background-color: inherit; /* background color */
   font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
-  color: black;
+  color: white;
+  font-size: 1.15em;
 }
 
-button { /* TODO: add preview link in bottom left corner using <a> */
+button {
   display: block;
   align-items: center;
-  background-color: var(--spring-konstant-blue); /* from https://springkonstant.org */
+  background-color: var(--spring-konstant-blue);
   border: none;
   padding: 7.5px 7.5px;
   font-size: 16px;
@@ -53,20 +72,14 @@ button:hover { /* on button hover, change to this */
 }
 
 a { /* links to other sites */
-  font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
-  font-weight: 600;
-  color: var(--spring-konstant-blue);
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
   text-decoration: none; /* remove underline */
 }
 
-a:hover { /* on link hover */
+a:hover {
   text-decoration: underline;
-}
-
-h2 { /* section */
-  background-color: white; /* background color */
-  font-family: 'Quicksand', sans-serif; /* Use quicksand, else, use the browser's sans-serif font. */
-  color: black;
 }
 
 a:visited { /* if the link has already been visited */
@@ -74,5 +87,36 @@ a:visited { /* if the link has already been visited */
 }
 
 abbr { /* abbreviations, pretty rarely used */
-  text-decoration: underline;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+}
+
+/* ================================================= */
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  background-color: white;
+  overflow-y: scroll;
+  width: 15vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.main {
+  background-color: inherit;
+  flex-grow: 1;
+  padding-right: clamp(10%, 15vw, 20%);
+  padding-left: clamp(10%, 15vw, 20%);
+}
+
+.sidebar-text {
+  color: black;
 }

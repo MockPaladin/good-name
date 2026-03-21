@@ -1,33 +1,27 @@
-function toSite(siteLocation) {
+function sidebarVisibility() {
 
-  window.location.href = siteLocation;
+  const elements = document.getElementsByClassName("sidebar");
 
-}
+  if (window.innerWidth <= 800) {
 
-function setMargin(writeLocation) {
+    for (const element of elements) {
+      element.style.display = "none";
+    }
 
-  writeLocation = document.querySelectorAll(writeLocation);
+  } else {
 
-  for (let i = 0; i < writeLocation.length; i++) {
-
-    if (window.innerWidth <= 850) {
-      writeLocation[i].style.marginLeft = "2.5%";
-      writeLocation[i].style.marginRight = "2.5%";
-    } else {
-      writeLocation[i].style.marginLeft = "20%";
-      writeLocation[i].style.marginRight = "20%";
+    for (const element of elements) {
+      element.style.display = "revert";
     }
   }
-
-
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  setMargin("main");
+  sidebarVisibility();
   });
 
 window.addEventListener('resize', function() {
-  setMargin("main");
+  sidebarVisibility();
   });
 
 console.log("JavaScript has finished loading. Hello from random person!");
