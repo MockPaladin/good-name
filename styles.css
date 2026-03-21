@@ -8,6 +8,19 @@
   --button-hover-gray: hsl(210, 9.09%, 21.57%);
 }
 
+
+::selection { /* all other browsers */
+  background: var(--spring-konstant-blue); /* change background color */
+  color: white; /* change text color */
+}
+
+
+::-moz-selection { /* firefox eugh */
+  background: var(--spring-konstant-blue);
+  color: white;
+}
+
+
 * {
   box-sizing: border-box;
 }
