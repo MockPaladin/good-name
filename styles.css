@@ -8,6 +8,19 @@
   --button-hover-gray: hsl(210, 9.09%, 21.57%);
 }
 
+
+::selection { /* all other browsers */
+  background: var(--spring-konstant-blue); /* change background color */
+  color: white; /* change text color */
+}
+
+
+::-moz-selection { /* firefox eugh */
+  background: var(--spring-konstant-blue);
+  color: white;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -103,10 +116,10 @@ abbr { /* abbreviations, pretty rarely used */
 
 .sidebar {
   overflow-y: scroll;
-  width: 15vw;
+  width: clamp(10%, 15vw, 15vw);
   height: 100vh;
   background-color: #f4f4f4;
-  padding: 15px;
+  padding: clamp(2.5px, 10px, 15px);
   position: sticky;
   top: 0;
   box-sizing: border-box;
