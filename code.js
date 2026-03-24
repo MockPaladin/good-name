@@ -50,9 +50,8 @@ window.addEventListener('resize', function() {
   sidebarVisibility();
   });
 
-<<<<<<< HEAD
 console.log("JavaScript has finished loading. Hello from random person!");
-=======
+
 console.log("JavaScript has finished loading. Hello from random person!");
 
 
@@ -72,4 +71,3 @@ window.addEventListener("message", ({ data }) => {
         }
     }
 });
->>>>>>> ab45a1541ed2d1e9335ab3144010b6993869e94c
