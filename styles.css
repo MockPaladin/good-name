@@ -84,6 +84,10 @@ button {
   width: 100px; 
 }
 
+header button {
+  display: block;
+}
+
 button:hover { /* on button hover, change to this */
   background-color: var(--button-hover-gray);
 }
@@ -124,6 +128,12 @@ abbr { /* abbreviations, pretty rarely used */
   top: 0;
   box-sizing: border-box;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
 }
 
 .main {
@@ -148,4 +158,12 @@ abbr { /* abbreviations, pretty rarely used */
 .to-top {
   color: var(--spring-konstant-blue);
   font-weight: 600;
+}
+
+/* Reset only what you need */
+#menu-toggle {
+  all: unset;          /* wipe weird inherited styles */
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
 }
