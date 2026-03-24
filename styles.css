@@ -112,6 +112,12 @@ abbr { /* abbreviations, pretty rarely used */
   text-decoration-thickness: 1.5px;
 }
 
+iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+}
+
 /* ================================================= */
 
 .layout {
