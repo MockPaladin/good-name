@@ -51,3 +51,21 @@ window.addEventListener('resize', function() {
   });
 
 console.log("JavaScript has finished loading. Hello from random person!");
+
+
+const iframe = document.getElementById("iframe");
+window.addEventListener("message", ({ data }) => {
+    switch(data.type) {
+        case "ready": {
+            iframe.contentWindow?.postMessage({
+                type: "change-value",
+                value: "new initial value"
+            }, "*");
+            break;
+        }
+        case "change": {
+            console.log("current value is", data.value)
+            break;
+        }
+    }
+});
