@@ -50,4 +50,26 @@ window.addEventListener('resize', function() {
   sidebarVisibility();
   });
 
+<<<<<<< HEAD
 console.log("JavaScript has finished loading. Hello from random person!");
+=======
+console.log("JavaScript has finished loading. Hello from random person!");
+
+
+const iframe = document.getElementById("iframe");
+window.addEventListener("message", ({ data }) => {
+    switch(data.type) {
+        case "ready": {
+            iframe.contentWindow?.postMessage({
+                type: "change-value",
+                value: "new initial value"
+            }, "*");
+            break;
+        }
+        case "change": {
+            console.log("current value is", data.value)
+            break;
+        }
+    }
+});
+>>>>>>> ab45a1541ed2d1e9335ab3144010b6993869e94c
