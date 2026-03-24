@@ -1,5 +1,5 @@
 function sidebarVisibility() {
-
+// Creates a sidebar for the user to navigate the website //
   const elements = document.getElementsByClassName("sidebar");
 
   if (window.innerWidth <= 800) {
