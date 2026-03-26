@@ -52,9 +52,6 @@ window.addEventListener('resize', function() {
 
 console.log("JavaScript has finished loading. Hello from random person!");
 
-console.log("JavaScript has finished loading. Hello from random person!");
-
-
 const iframe = document.getElementById("iframe");
 window.addEventListener("message", ({ data }) => {
     switch(data.type) {
