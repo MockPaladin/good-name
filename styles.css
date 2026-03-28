@@ -95,7 +95,7 @@ button:hover { /* on button hover, change to this */
 a { /* links to other sites */
   font-family: 'Quicksand', sans-serif;
   font-weight: inherit;
-  color: white;
+  color: var(--spring-konstant-blue);
   text-decoration: none; /* remove underline */
   font-size: 1.15em; 
 }
