@@ -93,10 +93,11 @@ button:hover { /* on button hover, change to this */
 }
 
 a { /* links to other sites */
-  font-family: inherit;
+  font-family: 'Quicksand', sans-serif;
   font-weight: inherit;
-  color: inherit;
+  color: white;
   text-decoration: none; /* remove underline */
+  font-size: 1.15em; 
 }
 
 a:hover {
