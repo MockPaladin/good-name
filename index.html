@@ -33,12 +33,10 @@
 
         <br>
         <button><a href="./pages/programming-course/introduction">Button to overview</a></button>
-        <!-- This allows for the user to code using Java, currently can't test or run a solution but still works -->
-        <p>Hello! Below is an iframe which displays an editor with Java syntax.</p>
-        <!--<iframe src="https://embeddable-monaco.lukasbach.com?code=initial_code&language=java&theme=vs-dark" id="iframe"></iframe> -->
-        <div id="root"></div>
-        <script>App()</script>
+        <p>Hello! Hopefully, the below is rendered as the Monaco editor with React.</p>
+        <div id="monaco"></div>
       </main>
     </div>
+    <script type="module" src="./monaco.jsx"></script>
   </body>
 </html>
